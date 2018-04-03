@@ -1,0 +1,29 @@
+#!/bin/bash
+
+function effects {
+	compton --shadow-exclude 'g:e:Conky' --config ~/.config/compton.conf &
+}
+
+function screensaver {
+	xset -dpms & xset s noblank & xset s off &
+	xautolock -time 20 -locker slock &
+}
+
+function menu {
+	tint2 &
+	volwheel &
+	clipit &
+}
+
+function wallpaper {
+	nitrogen --restore &
+	#if [ -r ~/.wallpaper.png ]; then
+	#   hsetroot -fill ~/.wallpaper.png &
+	#else
+	#   hsetroot -fill /usr/share/wallpapers/archbang-sky.png &
+	#fi
+}
+
+#function setDisplay {
+#	xrandr --output VGA1 --mode 1680x1050 --rate 60.0 --output LVDS1 --off &
+#}
