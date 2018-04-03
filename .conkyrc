@@ -75,15 +75,15 @@ ${alignr}${color} available updates ${color CC2A2E}${font Cantarell:bold:size=10
 ${alignr}${color} last updated on: ${font Cantarell:size=8}${color2}${execi 10000 grep "starting full system upgrade" /var/log/pacman.log | tail -n1| cut --bytes=2-17}
 ${voffset 14}${color3}${font Cantarell:size=9:bold}APPLICATIONS${font}${voffset -6}
 ${color2}${hr 1}${voffset -6}
-${color2}terminal  ${alignr}${color}super+enter
+${color2}terminal  ${alignr}${color}alt+enter
 ${color2}menu  ${alignr}${color}super+spacebar
-${color2}run command...  ${alignr}${color}super+r
-${color2}file manager  ${alignr}${color}super+f
-${color2}web browser ${alignr}${color}super+w
-${color2}volume control  ${alignr}${color}super+v
-${color2}lock screen  ${alignr}${color}super+l
+${color2}run command...  ${alignr}${color}alt+r
+${color2}file manager  ${alignr}${color}alt+f
+${color2}web browser ${alignr}${color}alt+w
+${color2}volume control  ${alignr}${color}alt+v
+${color2}lock screen  ${alignr}${color}alt+l
 ${color2}xkill  ${alignr}${color}shift+super+k
-${color2}exit openbox  ${alignr}${color}shift+super+q
+${color2}exit openbox  ${alignr}${color}alt+shift+q
 ${voffset 10}${color3}${font Cantarell:size=9:bold}WINDOWS${font}${voffset -6}
 ${color2}${hr 1}${voffset -6}
 ${color2}close ${alignr} ${color}shift+super+c
