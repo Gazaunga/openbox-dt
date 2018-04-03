@@ -1,0 +1,66 @@
+URxvt.termName: rxvt-unicode
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+URxvt.saveLines: 9999
+URxvt.intensityStyles: false
+!URxvt.depth: 32
+URxvt.allow_bold: true
+
+urxvt*scrollBar:            false
+
+URxvt.font: xft:Iosevka Term:pixelsize=12,xft:DejaVu Sans Mono:pixelsize=14
+URxvt.boldFont: xft:Iosevka Term:pixelsize=12:bold,xft:DejaVu Sans Mono:pixelsize=14:bold
+URxvt.italicFont: xft:Iosevka Term:pixelsize=12:italic,xft:DejaVu Sans Mono:pixelsize=14:italic
+URxvt.bolditalicFont: xft:Iosevka Term:pixelsize=12:bold:italic,xft:DejaVu Sans Mono:pixelsize=14:bold:italic
+URxvt.letterSpace: 0
+URxvt.lineSpace: 0
+
+URxvt.keysym.Home: \033[H
+URxvt.keysym.End:  \033[F
+
+! vi-like for scrollback
+URxvt.keysym.M-k: command:\033]720;1\007
+URxvt.keysym.M-j: command:\033]721;1\007
+
+#define base00 #070d0f
+#define base01 #0b161a
+#define base02 #000000
+#define base03 #323232
+#define base04 #858585
+#define base05 #d0cbaf
+#define base06 #b6bdca
+#define base07 #fffdff
+#define base08 #ea5c39
+#define base09 #ea5c39
+#define base0A #ee863e
+#define base0B #ee863e
+#define base0C #ef8e6d
+#define base0D #ef8e6d
+#define base0E #fefbb0
+#define base0F #fefbb0
+
+*.foreground : base05
+#ifdef background_opacity
+*.background:   [background_opacity]base00
+#else
+*.background : base00
+#endif
+*.cursorColor : base05
+
+*.color0 : base00
+*.color1 : base08
+*.color2 : base0B
+*.color3 : base0A
+*.color4 : base0D
+*.color5 : base0E
+*.color6 : base0C
+*.color7 : base05
+
+*.color8  : base03
+*.color9  : base09
+*.color10 : base01
+*.color11 : base02
+*.color12 : base04
+*.color13 : base06
+*.color14 : base0F
+*.color15 : base07
