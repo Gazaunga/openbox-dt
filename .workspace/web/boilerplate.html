@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- â€  -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--
+  The above 3 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+
+  â€  Use the content="ie-edge" tag if your project
+    supports Internet Explorer prior to version 11.
+ -->
+
+<!-- Set the base URL for all relative URLs within the document -->
+<!-- <base href="http://example.com/page.html"> -->
+
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+
+<!-- Tells Google not to show the sitelinks search box -->
+<meta name="google" content="nositelinkssearchbox">
+
+<!-- Notifies a URL when you link to it on your document -->
+<!-- <link rel="webmention" href="http://example.com/webmention"> -->
+
+<!-- Enable standalone (full-screen) mode -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Link to an external CSS file -->
+<link rel="stylesheet" href="">
+
+<title>Page Title</title>
+
+<!-- Used for adding in-document CSS -->
+<style>
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-kerning: auto;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+text-rendering: optimizeLegibility;
+font-variant-ligatures: common-ligatures discretionary-ligatures historical-ligatures contextual;
+color: rgba(0, 0, 0, 0.8);
+text-shadow: 0 1px rgba(255, 255, 255, 0.8), 0 0 0.05em rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-size: 1.25rem;
+  line-height: 2rem;
+margin: 10vw 14vw;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: 'Arimo', sans-serif;
+}
+
+h1 h2 h3 h4 {
+ line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h3 h4 {
+font-variant-caps: small-caps;
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  letter-spacing: 0.025em;
+  text-transform: inherit;
+}
+
+p ,ul, ol, pre, table, blockquote {
+font-family: 'Open Sans', sans-serif;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+/* Text Hierarchies */
+
+.dark {
+  color: hsl(0, 0%, 17%);
+  font-weight: 700;
+}
+
+.grey {
+  color: hsl(0, 0%, 40%);
+  font-weight: 400;
+}
+
+.light-grey {
+  color: hsl(0, 0%, 45%);
+  font-weight: 400;
+}
+
+/* CSS GRID optimized for images but useful for anything*/
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+}
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,200i,400,400i,500,500i,700,700i');
+
+/*tipped element. should be inline-block or block*/
+
+.qtip {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  color: #3bb4e5;
+  border-bottom: 0.05em dotted #3bb4e5;
+  box-sizing: border-box;
+  font-style: normal;
+  -webkit-transition: all .25s ease-in-out;
+  transition:all .25s ease-in-out
+}
+.qtip:hover {color:#069;border-bottom:0.05em dotted #069}
+
+/*the tip*/
+
+.qtip:before {
+  content: attr(data-tip);
+  font-size: 14px;
+  position: absolute;
+  background: rgba(10, 20, 30, 0.85);
+  color: #fff;
+  line-height: 1.2em;
+  padding: 0.5em;
+  font-style: normal;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  min-width: 120px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-family: sans-serif;
+  letter-spacing: 0;
+  font-weight: 600
+}
+.qtip:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  content: '';
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out
+}
+.qtip:hover:before,
+.qtip:hover:after {
+  visibility: visible;
+  opacity: 1
+}
+
+/*top*/
+
+.qtip.tip-top:before {
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, calc(-100% - 8px));
+          transform: translate(-50%, calc(-100% - 8px));
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.qtip.tip-top:after {
+  border-width: 8px 8px 0 8px;
+  border-color: rgba(10, 20, 30, 0.85) transparent transparent transparent;
+  top: -8px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+/*bottom*/
+
+.qtip.tip-bottom:before {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, calc(100% + 8px));
+          transform: translate(-50%, calc(100% + 8px));
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.qtip.tip-bottom:after {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent rgba(10, 20, 30, 0.85) transparent;
+  bottom: -8px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+/*left*/
+
+.qtip.tip-left:before {
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(calc(-100% - 8px), -50%);
+          transform: translate(calc(-100% - 8px), -50%);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.qtip.tip-left:after {
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent rgba(10, 20, 30, 0.85);
+  left: -8px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+/*right*/
+
+.qtip.tip-right:before {
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(calc(100% + 8px), -50%);
+          transform: translate(calc(100% + 8px), -50%);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.qtip.tip-right:after {
+  border-width: 8px 8px 8px 0;
+  border-color: transparent rgba(10, 20, 30, 0.85) transparent transparent;
+  right: -8px;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+/* .hl {
+  color: #eb1777
+} */
+
+.qcontent {
+  color: #ff0;
+  font-weight: bold
+}
+.qclass {
+  color: #dd0;
+  font-weight: bold
+}
+
+/* <i class="qtip tip-top" data-tip="Tip content">
+Any text / image / element
+</i> */
+
+/* COLORS */
+
+.turquoise { background: #1abc9c; }
+.emerland { background: #2ecc71; }
+.peterriver { background: #3498db; }
+.amethyst { background: #9b59b6; }
+.wetasphalt { background: #34495e; }
+.greensea { background: #16a085; }
+.nephritis { background: #27ae60; }
+.belizehole { background: #2980b9; }
+.wisteria { background: #8e44ad; }
+.midnightblue { background: #2c3e50; }
+.sunflower { background: #f1c40f; }
+.carrot { background: #e67e22; }
+.alizarin { background: #e74c3c; }
+.clouds { background: #ecf0f1; color: #999; }
+.concrete { background: #95a5a6; }
+.orange { background: #f39c12; }
+.pumpkin { background: #d35400; }
+.pomegranate { background: #c0392b; }
+.silver { background: #bdc3c7; }
+.asbestos { background: #7f8c8d; }
+
+/* UNICODE */
+
+p.dialogue:before         { content: "\275D"; }
+p.dialogue:after          { content: "\275E"; }
+
+span.irony:after { content: "\2E46"; }
+span.lovepoint:after { content: "\2E43"; }
+span.certpoint:after { content: "\2E44"; }
+span.authpoint:after { content: "\2E45"; }
+span.accpoint:after { content: "\2E47"; }
+span.doublepoint:after { content: "\2E48"; }
+</style>
+
+
+</head>
+
+<body>
+<!-- NAV BEGIN HERE -->
+
+<!-- WEBSITE BEGIN HERE -->
+
+
+</body>
+
+</html>
