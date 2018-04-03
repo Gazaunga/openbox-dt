@@ -12,8 +12,8 @@ function screensaver {
 function menu {
 	tint2 &
 	volwheel &
-	clipit &
-}
+	nm-applet &
+	}
 
 function wallpaper {
 	nitrogen --restore &
