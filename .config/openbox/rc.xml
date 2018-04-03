@@ -179,25 +179,25 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    <keybind key="C-A-Left">
+    <keybind key="C-Left">
       <action name="GoToDesktop">
         <to>left</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Right">
+    <keybind key="C-Right">
       <action name="GoToDesktop">
         <to>right</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Up">
+    <keybind key="C-Up">
       <action name="GoToDesktop">
         <to>up</to>
         <wrap>no</wrap>
       </action>
     </keybind>
-    <keybind key="C-A-Down">
+    <keybind key="C-Down">
       <action name="GoToDesktop">
         <to>down</to>
         <wrap>no</wrap>
@@ -474,7 +474,7 @@
       <action name="Move"/>
     </keybind>
     <!-- Keybindings for windows -->
-    <keybind key="S-W-c">
+    <keybind key="A-W-c">
       <action name="Close"/>
     </keybind>
     <keybind key="A-Escape">
@@ -490,7 +490,7 @@
     <keybind key="S-W-b">
       <action name="ToggleDecorations"/>
     </keybind>
-    <keybind key="S-W-Return">
+    <keybind key="A-F">
       <action name="ToggleFullscreen"/>
     </keybind>
     <keybind key="A-Down">
@@ -561,12 +561,12 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-space">
+    <keybind key="A-space">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
     </keybind>
-    <keybind key="W-r">
+    <keybind key="A-d">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -576,7 +576,7 @@
       </action>
     </keybind>
     <!-- Keybindings for important applications -->
-    <keybind key="W-w">
+    <keybind key="A-w">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -585,7 +585,7 @@
         <command>firefox</command>
       </action>
     </keybind>
-    <keybind key="W-f">
+    <keybind key="A-f">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -594,7 +594,7 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
-    <keybind key="S-W-k">
+    <keybind key="A-W-k">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -603,7 +603,7 @@
         <command>xkill</command>
       </action>
     </keybind>
-    <keybind key="W-v">
+    <keybind key="A-v">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -612,7 +612,7 @@
         <command>pavucontrol</command>
       </action>
     </keybind>
-    <keybind key="W-l">
+    <keybind key="A-l">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -622,7 +622,7 @@
       </action>
     </keybind>
     <!-- Keybindings for exiting out of Openbox -->
-    <keybind key="S-W-q">
+    <keybind key="A-W-q">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
@@ -1023,7 +1023,7 @@
     # each rule element can be left out or set to 'default' to specify to not 
     # change that attribute of the window
 
-    <decor>yes</decor>
+    <decor>no</decor>
     # enable or disable window decorations
 
     <shade>no</shade>
