@@ -22,7 +22,8 @@ apps = %w[
   obkey
   latex-mk
   j4-dmenu-desktop
-  networkmanager-git
+  networkmanager
+  network-manager-applet
   siji-git
   ttf-font-awesome
   zathura
