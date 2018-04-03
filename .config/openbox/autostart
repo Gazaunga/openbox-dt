@@ -2,3 +2,4 @@ sxhkd &
 tint2 &
 compton &
 nitrogen --restore &
+xrdb -merge ~/.Xresources
