@@ -3,3 +3,4 @@ tint2 &
 compton &
 nitrogen --restore &
 xrdb -merge ~/.Xresources
+dunst -fn "$DUNST_FONT" -geometry "$DUNST_SIZE" &
