@@ -32,6 +32,8 @@ apps = %w[
   zathura-djvu
   zathura-pdf-poppler
   htop
+  volwheel
+  i3lock-color
 ]
 
 install = ->app{ `trizen -Syu --noconfirm --ignore="inxi" #{app}` }
