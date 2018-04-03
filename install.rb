@@ -36,6 +36,7 @@ apps = %w[
   i3lock-color
   alsa-utils
   conky
+  pavucontrol
 ]
 
 install = ->app{ `trizen -Syu --noconfirm --ignore="inxi" #{app}` }
