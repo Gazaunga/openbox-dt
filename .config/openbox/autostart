@@ -4,7 +4,7 @@ if [ -x ~/.config/openbox/autostart_functions ]; then
 	. ~/.config/openbox/autostart_functions
 fi
 
-#setDisplay &
+setDisplay &
 menu &
 wallpaper &
 effects &
