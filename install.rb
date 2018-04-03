@@ -34,6 +34,7 @@ apps = %w[
   htop
   volwheel
   i3lock-color
+  alsa-utils
 ]
 
 install = ->app{ `trizen -Syu --noconfirm --ignore="inxi" #{app}` }
