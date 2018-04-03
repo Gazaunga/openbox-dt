@@ -1,6 +1,17 @@
+#!/bin/bash
+
+if [ -x ~/.config/openbox/autostart_functions ]; then
+	. ~/.config/openbox/autostart_functions
+fi
+
+#setDisplay &
+menu &
+wallpaper &
+effects &
 sxhkd &
-tint2 &
-compton &
-nitrogen --restore &
+#tint2 &
+#compton &
+#nitrogen --restore &
 xrdb -merge ~/.Xresources
 dunst -fn "$DUNST_FONT" -geometry "$DUNST_SIZE" &
+screensaver &
