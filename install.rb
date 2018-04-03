@@ -10,7 +10,7 @@ apps = %w[
   openbox 
   tint2-git 
   compton-git 
-  vlc-git 
+  vlc
   ranger 
   mpd 
   ncmpcpp 
