@@ -68,9 +68,9 @@
 					</command>
 				</action>
 			</item>
-			<item label="Leafpad">
+			<item label="Mousepad">
 				<action name="Execute">
-					<execute>leafpad</execute>
+					<execute>mousepad</execute>
 				</action>
 			</item>
 			<item label="ProRealTime">
@@ -86,7 +86,7 @@
 			<item label="Terminal">
 				<action name="Execute">
 					<execute>
-						x-terminal-emulator
+						xterm
 					</execute>
 				</action>
 			</item>
@@ -209,7 +209,7 @@
 		<menu id="root-menu-273054" label="Internet">
 			<item label="Canto RSS Reader">
 				<action name="Execute">
-					<execute>termite -e 'canto-curses' -t 'Canto RSS Reader' </execute>
+					<execute>xterm -e 'canto-curses' -t 'Canto RSS Reader' </execute>
 				</action>
 			</item>
 			<item label="Deluge">
@@ -243,17 +243,17 @@
 			</item>
 			<item label="Irssi IRC">
 				<action name="Execute">
-					<execute>termite -e 'irssi' -t 'irssi'</execute>
+					<execute>xterm -e 'irssi' -t 'irssi'</execute>
 				</action>
 			</item>
 			<item label="Lynx">
 				<action name="Execute">
-					<execute>termite -e 'lynx www.google.com' -t 'lynx web browser'</execute>
+					<execute>xterm -e 'lynx www.google.com' -t 'lynx web browser'</execute>
 				</action>
 			</item>
 			<item label="Mutt Email">
 				<action name="Execute">
-					<execute>termite -e 'mutt' -t 'mutt email'</execute>
+					<execute>xterm -e 'mutt' -t 'mutt email'</execute>
 				</action>
 			</item>
 			<item label="TeamViewer">
@@ -270,9 +270,9 @@
 			</item>
 		</menu>
 		<menu id="root-menu-47033" label="Programming">
-			<item label="Geany">
+			<item label="kate">
 				<action name="Execute">
-					<execute>geany</execute>
+					<execute>kate</execute>
 				</action>
 			</item>
 			<item label="Netbeans">
@@ -285,9 +285,9 @@
 					<execute>sensible-browser http://localhost/phpmyadmin/</execute>
 				</action>
 			</item>
-			<item label="Python3 in Terminal">
+			<item label="Ruby repl">
 				<action name="Execute">
-					<execute>x-terminal-emulator -e python3</execute>
+					<execute>xterm -e irb</execute>
 				</action>
 			</item>
 		</menu>
@@ -345,7 +345,7 @@
 		<menu id="root-menu-943454" label="Sound &amp; Video">
 			<item label="AlsaMixer">
 				<action name="Execute">
-					<execute>termite -e 'alsamixer' -t 'alsamixer'</execute>
+					<execute>xterm -e 'alsamixer' -t 'alsamixer'</execute>
 				</action>
 			</item>
 			<item label="Anoise ">
