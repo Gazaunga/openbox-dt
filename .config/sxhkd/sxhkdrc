@@ -1,1 +1,121 @@
+## ┌─┐─┐ ┬┬ ┬┬┌─┌┬┐
+## └─┐┌┴┬┘├─┤├┴┐ ││
+## └─┘┴ └─┴ ┴┴ ┴─┴┘
 
+## -- sxhkd hotkeys --
+
+## terminal
+super + Return
+	xterm
+
+## program launcher
+super + @space
+	interrobang
+
+## reload sxhkd config
+super + Escape
+	pkill -USR1 -x sxhkd
+
+## Tile all windows
+super + t
+    rtile.rb --all
+
+## Tile all windows on active monitor
+super + a
+    rtile.rb --all-active
+
+## Tile all windows at half the space of the previous window
+super + h
+    rtile.rb --all-binary
+
+## Tile all windows on screen automatically when new window is closed/opens
+  super + shift + a
+      rtile.rb --all-auto
+
+## Move active window to top edge
+  alt + k
+      rtile.rb t
+
+## Move active window to bottom edge
+  alt + j
+      rtile.rb b
+
+## Move active window to left edge
+  alt + h
+      rtile.rb l
+
+## Move active window to right edge
+  alt + l
+      rtile.rb r
+
+## Move active window to top left edge
+  *** + ***
+      rtile.rb tl
+
+## Move active window to top right edge
+  *** + ***
+     rtile.rb tr
+
+## Move active window to bottom left edge
+   *** + ***
+     rtile.rb bl
+
+## Move active window to bottom right edge
+   *** + ***
+     rtile.rb br
+
+## Split active window up
+   super + k
+     rtile.rb --split-up
+
+## Split active window down
+   super + j
+     rtile.rb --split-down
+
+## Split active window left
+   super + h
+     rtile.rb --split-left
+
+## Split active window right
+    super + l
+     rtile.rb --split-right
+
+## Grow active window to nearest edge up
+   alt + shift + g + k
+     rtile.rb --grow-up
+
+## Grow active window to nearest edget down
+  alt + shift + g + j
+    rtile.rb --grow-down
+    
+## Grow active window to nearest edge left
+  alt + shift + g + h
+    rtile.rb --grow-left
+    
+## Grow active window to nearest edge right
+  alt + shift + g + l
+    rtile.rb --grow-right
+
+## Split the last two active windows at the position of the older
+  super + t
+    rtile.rb --binary
+
+## Swap the pposition of the last two active windows
+  super + s
+    rtile.rb --swap
+
+## Swap the position of the active window with the biggest window
+  super + shift + s
+    rtile.rb --swap-biggest
+
+## Cycle positions of all windows on screen
+  super + c
+    rtile.rb --cycle
+
+## Move active window to next monitor
+  super + n
+    rtile.rb --next-monitor
+
+## Move all windows on screen to their next monitor
+  super + shift + n
+    rtile.rb --cycle-monitors
