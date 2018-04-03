@@ -27,3 +27,7 @@ function wallpaper {
 #function setDisplay {
 #	xrandr --output VGA1 --mode 1680x1050 --rate 60.0 --output LVDS1 --off &
 #}
+
+function setDisplay {
+	xrandr --output VGA-1 --mode 1920x1080 --rate 60.0 &
+}
