@@ -1,5 +1,5 @@
 [global]
-    font = monaco 8
+    font = Monaco 8
     markup = full
     format = "<b>%s</b>\n%b"
     sort = yes
