@@ -1,4 +1,5 @@
 exec openbox-session
+ruby bin/rtile/rtile.rb
 
 # Cleanup unnecessary files
 rm -rf "$HOME/.cache/"
