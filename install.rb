@@ -37,6 +37,7 @@ apps = %w[
   alsa-utils
   conky
   pavucontrol
+  rofi-git
 ]
 
 install = ->app{ `trizen -Syu --noconfirm --ignore="inxi" #{app}` }
