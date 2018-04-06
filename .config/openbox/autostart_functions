@@ -22,6 +22,8 @@ function wallpaper {
 	#else
 	#   hsetroot -fill /usr/share/wallpapers/archbang-sky.png &
 	#fi
+	#xwinwrap -g 1920x1080 -ni -s -nf -b -un -argb -sh rectangle -fdt -- mpv -wid WID --keepaspect=no --loop /users/grace/.wm/schemes/sakura/wallpaper.webm &
+	#xwinwrap -g 1920x1080 -ni -s -nf -b -un -argb -sh rectangle -fdt -- gifview -w WID -a /users/grace/.wm/schemes/sakura/wallpaper.gif &
 }
 
 #function setDisplay {
