@@ -5,12 +5,12 @@
 ## -- sxhkd hotkeys --
 
 ## terminal
-super + Return
-	xterm
+alt + Return
+	rxvt-unicode
 
 ## program launcher
 super + @space
-	interrobang
+	j4-dmenu-desktop --dmenu="dmenu -i -fn 'fira-10' -l 10"
 
 ## reload sxhkd config
 super + Escape
