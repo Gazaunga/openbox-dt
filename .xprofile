@@ -12,3 +12,7 @@ GEM_HOME=$(ruby -e 'print Gem.user_dir')
 GEM_PATH=$HOME/.gem
 export DUNST_FONT='OfficeCodePro 7'
 export DUNST_SIZE='250x20-30+30'
+
+if [ -n "$BASH" ] && [ -r ~/.bashrc ]; then
+    . ~/.bashrc
+fi
