@@ -1,4 +1,4 @@
-exec openbox-session
+exec dbus-launch openbox-session
 ruby bin/rtile.rb &
 
 # Cleanup unnecessary files
