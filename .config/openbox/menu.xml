@@ -12,15 +12,15 @@
             </action>
           </item>
         </menu>
-        <menu id="root-menu-753414-475139-87203" label="Rings">
-          <item label="Conky Rings (Start)">
+        <menu id="root-menu-753414-475139-87203" label="Main">
+          <item label="Conky Main (Start)">
             <action name="Execute">
-              <execute>conky -c '/home/derek/.conky/Rings/.conkyrc'</execute>
+              <execute>conky -c '/home/gazbit/.config/conky/openbox.conkyrc'</execute>
             </action>
           </item>
-          <item label="Rings (Edit)">
+          <item label="Conky Main (Edit)">
             <action name="Execute">
-              <execute>gedit /home/derek/.conky/Rings/.conkyrc</execute>
+              <execute>emacs -fs /home/gazbit/.config/conky/openbox.conkyrc</execute>
             </action>
           </item>
         </menu>
