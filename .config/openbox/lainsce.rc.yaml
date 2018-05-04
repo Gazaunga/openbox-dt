@@ -1,765 +1,576 @@
-openbox_config: 
- resistance: 
-  strength: 10
-  screen_edge_strength: 20
- focus: 
-  focusNew: yes
-  followMouse: yes
-  focusLast: no
-  underMouse: yes
-  focusDelay: 0
-  raiseOnFocus: no
- placement: 
-  policy: UnderMouse
-  center: yes
-  monitor: Mouse
-  primaryMonitor: 1
- theme: 
-  name: lain
-  titleLayout: LC
-  cornerRadius: 4
-  keepBorder: yes
-  animateIconify: no
-  font: 
-   - 
-   name: "t cherry Wide"
-    size: 9
-    weight: Normal
-    slant: Normal
-    _place: ActiveWindow
-   - 
-   name: "t cherry Wide"
-    size: 9
-    weight: Normal
-    slant: Normal
-    _place: InactiveWindow
-   - 
-   name: "t cherry Wide"
-    size: 8
-    weight: Normal
-    slant: Normal
-    _place: MenuHeader
-   - 
-   name: "t cherry Wide"
-    size: 8
-    weight: Normal
-    slant: Normal
-    _place: MenuItem
-   - 
-   name: ""
-    size: 8
-    weight: ""
-    slant: ""
-    _place: ActiveOnScreenDisplay
-   - 
-   name: Sans
-    size: 8
-    weight: ""
-    slant: ""
-    _place: InactiveOnScreenDisplay
- desktops: 
-  number: 6
-  firstdesk: 1
-  names: 
-   name: 
-    - 
-   1
-    - 
-   2
-    - 
-   3
-    - 
-   4
-    - 
-   5
-    - 
-   6
-  popupTime: 0
- resize: 
-  drawContents: yes
-  popupShow: Never
-  popupPosition: Center
-  popupFixedPosition: 
-   x: 10
-   y: 10
- margins: 
-  top: 10
-  bottom: 50
-  left: 10
-  right: 10
- keyboard: 
-  chainQuitKey: "C-g"
-  keybind: 
-   - 
-   action: 
-     to: 1
-     _name: GoToDesktop
-    _key: "W-1"
-   - 
-   action: 
-     to: 2
-     _name: GoToDesktop
-    _key: "W-2"
-   - 
-   action: 
-     to: 3
-     _name: GoToDesktop
-    _key: "W-3"
-   - 
-   action: 
-     to: 4
-     _name: GoToDesktop
-    _key: "W-4"
-   - 
-   action: 
-     to: 5
-     _name: GoToDesktop
-    _key: "W-5"
-   - 
-   action: 
-     to: 6
-     _name: GoToDesktop
-    _key: "W-6"
-   - 
-   action: 
-     to: 6
-     _name: GoToDesktop
-    _key: "W-7"
-   - 
-   action: 
-     to: 1
-     wrap: no
-     follow: no
-     _name: SendToDesktop
-    _key: "W-S-1"
-   - 
-   action: 
-     to: 2
-     wrap: no
-     follow: no
-     _name: SendToDesktop
-    _key: "W-S-2"
-   - 
-   action: 
-     to: 3
-     wrap: no
-     follow: no
-     _name: SendToDesktop
-    _key: "W-S-3"
-   - 
-   action: 
-     to: 4
-     wrap: no
-     follow: no
-     _name: SendToDesktop
-    _key: "W-S-4"
-   - 
-   action: 
-     to: 5
-     wrap: no
-     follow: no
-     _name: SendToDesktop
-    _key: "W-S-5"
-   - 
-   action: 
-     to: 6
-     wrap: no
-     follow: no
-     _name: SendToDesktop
-    _key: "W-S-6"
-   - 
-   action: 
-     _name: ToggleOmnipresent
-    _key: "W-o"
-   - 
-   action: 
-     _name: ToggleAlwaysOnTop
-    _key: "W-a"
-   - 
-   action: 
-     _name: ToggleMaximize
-    _key: "W-f"
-   - 
-   action: 
-     _name: ToggleFullscreen
-    _key: "W-m"
-   - 
-   action: 
-     command: "tog Polybar"
-     _name: Execute
-    _key: "W-v"
-   - 
-   action: 
-     _name: Close
-    _key: "W-q"
-   - 
-   action: 
-     dialog: none
-     finalactions: 
-      action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-       - 
-   _name: Unshade
-     _name: NextWindow
-    _key: "A-Tab"
-   - 
-   action: 
-     command: urxvtc
-     _name: Execute
-    _key: "W-Return"
-   - 
-   action: 
-     name: rofi
-     command: "rofi -show run"
-     _name: Execute
-    _key: "W-d"
-   - 
-   action: 
-     _name: MoveToCenter
-    _key: "W-c"
-   - 
-   action: 
-     command: "vol toggle"
-     _name: Execute
-    _key: XF86AudioMute
-   - 
-   action: 
-     command: "vol 5%+"
-     _name: Execute
-    _key: XF86AudioRaiseVolume
-   - 
-   action: 
-     command: "vol 5%-"
-     _name: Execute
-    _key: XF86AudioLowerVolume
-   - 
-   action: 
-     command: "cmus-remote -C player-pause"
-     _name: Execute
-    _key: "W-XF86AudioMute"
-   - 
-   action: 
-     command: "cmus-remote -C player-next"
-     _name: Execute
-    _key: "W-XF86AudioRaiseVolume"
-   - 
-   action: 
-     command: "cmus-remote -C player-prev"
-     _name: Execute
-    _key: "W-XF86AudioLowerVolume"
-   - 
-   action: 
-     command: scr
-     _name: Execute
-    _key: "W-P"
-   - 
-   action: 
-     command: "wal -q --backend colorz -i ~/Pictures/Wallpapers -o wal-set"
-     _name: Execute
-    _key: "W-w"
-   - 
-   action: 
-     command: "wal -q --backend colorz -i ~/Pictures/Wallpapers -o wal-set -l"
-     _name: Execute
-    _key: "W-e"
-   - 
-   action: 
-     _name: GrowToEdgeEast
-    _key: "W-Right"
-   - 
-   action: 
-     _name: GrowToEdgeWest
-    _key: "W-Left"
-   - 
-   action: 
-     _name: GrowToEdgeSouth
-    _key: "W-Down"
-   - 
-   action: 
-     _name: GrowToEdgeNorth
-    _key: "W-Up"
-   - 
-   action: 
-     - 
-   _name: UnmaximizeFull
-     - 
-   _name: MaximizeVert
-     - 
-   _name: Raise
-     - 
-   width: "50%"
-      x: 0
-      y: 0
-      _name: MoveResizeTo
-    _key: "W-KP_4"
-   - 
-   action: 
-     - 
-   _name: UnmaximizeFull
-     - 
-   _name: MaximizeVert
-     - 
-   _name: Raise
-     - 
-   width: "50%"
-      x: "50%"
-      y: 0
-      _name: MoveResizeTo
-    _key: "W-KP_6"
-   - 
-   action: 
-     - 
-   _name: UnmaximizeFull
-     - 
-   _name: Raise
-     - 
-   x: 0
-      y: 0
-      width: "100%"
-      height: "50%"
-      _name: MoveResizeTo
-    _key: "W-KP_8"
-   - 
-   action: 
-     - 
-   _name: UnmaximizeFull
-     - 
-   _name: Raise
-     - 
-   x: 0
-      y: "50%"
-      width: "100%"
-      height: "50%"
-      _name: MoveResizeTo
-    _key: "W-KP_2"
-   - 
-   action: 
-     - 
-   _name: UnmaximizeFull
-     - 
-   _name: Raise
-     - 
-   x: 0
-      y: 0
-      width: "50%"
-      height: "50%"
-      _name: MoveResizeTo
-    _key: "W-KP_7"
-   - 
-   action: 
-     - 
-   _name: UnmaximizeFull
-     - 
-   _name: Raise
-     - 
-   x: "50%"
-      y: 0
-      width: "50%"
-      height: "50%"
-      _name: MoveResizeTo
-    _key: "W-KP_9"
-   - 
-   action: 
-     - 
-   _name: UnmaximizeFull
-     - 
-   _name: Raise
-     - 
-   x: 0
-      y: "50%"
-      width: "50%"
-      height: "50%"
-      _name: MoveResizeTo
-    _key: "W-KP_1"
-   - 
-   action: 
-     - 
-   _name: UnmaximizeFull
-     - 
-   _name: Raise
-     - 
-   x: "50%"
-      y: "50%"
-      width: "50%"
-      height: "50%"
-      _name: MoveResizeTo
-    _key: "W-KP_3"
-   - 
-   action: 
-     - 
-   _name: UnmaximizeFull
-     - 
-   _name: Raise
-     - 
-   x: center
-      y: center
-      width: "50%"
-      height: "75%"
-      _name: MoveResizeTo
-    _key: "W-KP_5"
-   - 
-   action: 
-     direction: east
-     _name: MoveToEdge
-    _key: "W-A-Right"
-   - 
-   action: 
-     direction: west
-     _name: MoveToEdge
-    _key: "W-A-Left"
-   - 
-   action: 
-     direction: north
-     _name: MoveToEdge
-    _key: "W-A-Up"
-   - 
-   action: 
-     direction: south
-     _name: MoveToEdge
-    _key: "W-A-Down"
-   - 
-   action: 
-     - 
-   _name: Raise
-     - 
-   x: "-0"
-      y: 0
-      _name: MoveResizeTo
-    _key: "W-A-KP_9"
-   - 
-   action: 
-     - 
-   _name: Raise
-     - 
-   x: "-0"
-      y: "-0"
-      _name: MoveResizeTo
-    _key: "W-A-KP_3"
-   - 
-   action: 
-     - 
-   _name: Raise
-     - 
-   x: 0
-      y: "-0"
-      _name: MoveResizeTo
-    _key: "W-A-KP_1"
-   - 
-   action: 
-     - 
-   _name: Raise
-     - 
-   x: 0
-      y: 0
-      _name: MoveResizeTo
-    _key: "W-A-KP_7"
-   - 
-   action: 
-     command: "xbacklight -inc 5"
-     _name: Execute
-    _key: XF86MonBrightnessUp
-   - 
-   action: 
-     command: "xbacklight -dec 5"
-     _name: Execute
-    _key: XF86MonBrightnessDown
- mouse: 
-  dragThreshold: 1
-  doubleClickTime: 500
-  screenEdgeWarpTime: 0
-  screenEdgeWarpMouse: false
-  context: 
-   - 
-   mousebind: 
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-      _button: "W-Left"
-      _action: Press
-     - 
-   action: 
-       _name: Unshade
-      _button: "W-Left"
-      _action: Click
-     - 
-   action: 
-       _name: Move
-      _button: "W-Left"
-      _action: Drag
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-       - 
-   _name: Unshade
-      _button: "W-Right"
-      _action: Press
-     - 
-   action: 
-       _name: Resize
-      _button: "W-Right"
-      _action: Drag
-     - 
-   action: 
-       - 
-   _name: Lower
-       - 
-   _name: FocusToBottom
-       - 
-   _name: Unfocus
-      _button: "W-Middle"
-      _action: Press
-    _name: Frame
-   - 
-   mousebind: 
-     - 
-   action: 
-       _name: Move
-      _button: Left
-      _action: Drag
-     - 
-   action: 
-       _name: ToggleMaximizeFull
-      _button: Left
-      _action: DoubleClick
-    _name: Titlebar
-   - 
-   mousebind: 
-     action: 
-      edge: top
-      _name: Resize
-     _button: Left
-     _action: Drag
-    _name: Top
-   - 
-   mousebind: 
-     action: 
-      edge: left
-      _name: Resize
-     _button: Left
-     _action: Drag
-    _name: Left
-   - 
-   mousebind: 
-     action: 
-      edge: right
-      _name: Resize
-     _button: Left
-     _action: Drag
-    _name: Right
-   - 
-   mousebind: 
-     action: 
-      edge: bottom
-      _name: Resize
-     _button: Left
-     _action: Drag
-    _name: Bottom
-   - 
-   mousebind: 
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-       - 
-   _name: Unshade
-      _button: Left
-      _action: Press
-     - 
-   action: 
-       _name: Resize
-      _button: Left
-      _action: Drag
-    _name: "TRCorner BRCorner TLCorner BLCorner"
-   - 
-   mousebind: 
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-      _button: Left
-      _action: Press
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-      _button: Middle
-      _action: Press
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-      _button: Right
-      _action: Press
-    _name: Client
-   - 
-   mousebind: 
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-       - 
-   _name: Unshade
-      _button: Left
-      _action: Press
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-      _button: Right
-      _action: Press
-    _name: Icon
-   - 
-   mousebind: 
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-       - 
-   _name: Unshade
-      _button: Left
-      _action: Press
-     - 
-   action: 
-       _name: ToggleOmnipresent
-      _button: Left
-      _action: Click
-    _name: AllDesktops
-   - 
-   mousebind: 
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-      _button: Left
-      _action: Press
-     - 
-   action: 
-       _name: ToggleShade
-      _button: Left
-      _action: Click
-    _name: Shade
-   - 
-   mousebind: 
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-      _button: Left
-      _action: Press
-     - 
-   action: 
-       _name: Iconify
-      _button: Left
-      _action: Click
-    _name: Iconify
-   - 
-   mousebind: 
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-       - 
-   _name: Unshade
-      _button: Left
-      _action: Press
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-       - 
-   _name: Unshade
-      _button: Middle
-      _action: Press
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-       - 
-   _name: Unshade
-      _button: Right
-      _action: Press
-     - 
-   action: 
-       _name: ToggleMaximize
-      _button: Left
-      _action: Click
-     - 
-   action: 
-       direction: vertical
-       _name: ToggleMaximize
-      _button: Middle
-      _action: Click
-     - 
-   action: 
-       direction: horizontal
-       _name: ToggleMaximize
-      _button: Right
-      _action: Click
-    _name: Maximize
-   - 
-   mousebind: 
-     - 
-   action: 
-       - 
-   _name: Focus
-       - 
-   _name: Raise
-       - 
-   _name: Unshade
-      _button: Left
-      _action: Press
-     - 
-   action: 
-       _name: Close
-      _button: Left
-      _action: Click
-    _name: Close
- applications: 
-  application: 
-   decor: no
-   _class: "*"
- dock: 
-  position: TopLeft
-  floatingX: 0
-  floatingY: 0
-  stacking: Above
-  direction: Vertical
-  noStrut: no
-  autoHide: no
-  hideDelay: 300
-  showDelay: 300
- _xmlns: "http://openbox.org/3.4/rc"
- "_xmlns:xi": "http://www.w3.org/2001/XInclude"
+---
+openbox_config:
+  xmlns: http://openbox.org/3.4/rc
+  xmlns:xi: http://www.w3.org/2001/XInclude
+  resistance:
+    strength: '10'
+    screen_edge_strength: '20'
+  focus:
+    focusNew: 'yes'
+    followMouse: 'yes'
+    focusLast: 'no'
+    underMouse: 'yes'
+    focusDelay: '0'
+    raiseOnFocus: 'no'
+  placement:
+    policy: UnderMouse
+    center: 'yes'
+    monitor: Mouse
+    primaryMonitor: '1'
+  theme:
+    name: lain
+    titleLayout: LC
+    cornerRadius: '4'
+    keepBorder: 'yes'
+    animateIconify: 'no'
+    font:
+    - place: ActiveWindow
+      name: t cherry Wide
+      size: '9'
+      weight: Normal
+      slant: Normal
+    - place: InactiveWindow
+      name: t cherry Wide
+      size: '9'
+      weight: Normal
+      slant: Normal
+    - place: MenuHeader
+      name: t cherry Wide
+      size: '8'
+      weight: Normal
+      slant: Normal
+    - place: MenuItem
+      name: t cherry Wide
+      size: '8'
+      weight: Normal
+      slant: Normal
+    - place: ActiveOnScreenDisplay
+      name: 
+      size: '8'
+      weight: 
+      slant: 
+    - place: InactiveOnScreenDisplay
+      name: Sans
+      size: '8'
+      weight: 
+      slant: 
+  desktops:
+    number: '6'
+    firstdesk: '1'
+    names:
+      name:
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+    popupTime: '0'
+  resize:
+    drawContents: 'yes'
+    popupShow: Never
+    popupPosition: Center
+    popupFixedPosition:
+      x: '10'
+      y: '10'
+  margins:
+    top: '10'
+    bottom: '50'
+    left: '10'
+    right: '10'
+  keyboard:
+    chainQuitKey: C-g
+    keybind:
+    - key: W-1
+      action:
+        name: GoToDesktop
+        to: '1'
+    - key: W-2
+      action:
+        name: GoToDesktop
+        to: '2'
+    - key: W-3
+      action:
+        name: GoToDesktop
+        to: '3'
+    - key: W-4
+      action:
+        name: GoToDesktop
+        to: '4'
+    - key: W-5
+      action:
+        name: GoToDesktop
+        to: '5'
+    - key: W-6
+      action:
+        name: GoToDesktop
+        to: '6'
+    - key: W-7
+      action:
+        name: GoToDesktop
+        to: '6'
+    - key: W-S-1
+      action:
+        name: SendToDesktop
+        to: '1'
+        wrap: 'no'
+        follow: 'no'
+    - key: W-S-2
+      action:
+        name: SendToDesktop
+        to: '2'
+        wrap: 'no'
+        follow: 'no'
+    - key: W-S-3
+      action:
+        name: SendToDesktop
+        to: '3'
+        wrap: 'no'
+        follow: 'no'
+    - key: W-S-4
+      action:
+        name: SendToDesktop
+        to: '4'
+        wrap: 'no'
+        follow: 'no'
+    - key: W-S-5
+      action:
+        name: SendToDesktop
+        to: '5'
+        wrap: 'no'
+        follow: 'no'
+    - key: W-S-6
+      action:
+        name: SendToDesktop
+        to: '6'
+        wrap: 'no'
+        follow: 'no'
+    - key: W-o
+      action:
+        name: ToggleOmnipresent
+    - key: W-a
+      action:
+        name: ToggleAlwaysOnTop
+    - key: W-f
+      action:
+        name: ToggleMaximize
+    - key: W-m
+      action:
+        name: ToggleFullscreen
+    - key: W-v
+      action:
+        name: Execute
+        command: tog Polybar
+    - key: W-q
+      action:
+        name: Close
+    - key: A-Tab
+      action:
+        name: NextWindow
+        dialog: none
+        finalactions:
+          action:
+          - name: Focus
+          - name: Raise
+          - name: Unshade
+    - key: W-Return
+      action:
+        name: Execute
+        command: urxvtc
+    - key: W-d
+      action:
+        name:
+        - Execute
+        - rofi
+        command: rofi -show run
+    - key: W-c
+      action:
+        name: MoveToCenter
+    - key: XF86AudioMute
+      action:
+        name: Execute
+        command: vol toggle
+    - key: XF86AudioRaiseVolume
+      action:
+        name: Execute
+        command: vol 5%+
+    - key: XF86AudioLowerVolume
+      action:
+        name: Execute
+        command: vol 5%-
+    - key: W-XF86AudioMute
+      action:
+        name: Execute
+        command: cmus-remote -C player-pause
+    - key: W-XF86AudioRaiseVolume
+      action:
+        name: Execute
+        command: cmus-remote -C player-next
+    - key: W-XF86AudioLowerVolume
+      action:
+        name: Execute
+        command: cmus-remote -C player-prev
+    - key: W-P
+      action:
+        name: Execute
+        command: scr
+    - key: W-w
+      action:
+        name: Execute
+        command: wal -q --backend colorz -i ~/Pictures/Wallpapers -o wal-set
+    - key: W-e
+      action:
+        name: Execute
+        command: wal -q --backend colorz -i ~/Pictures/Wallpapers -o wal-set -l
+    - key: W-Right
+      action:
+        name: GrowToEdgeEast
+    - key: W-Left
+      action:
+        name: GrowToEdgeWest
+    - key: W-Down
+      action:
+        name: GrowToEdgeSouth
+    - key: W-Up
+      action:
+        name: GrowToEdgeNorth
+    - key: W-KP_4
+      action:
+      - name: UnmaximizeFull
+      - name: MaximizeVert
+      - name: Raise
+      - name: MoveResizeTo
+        width: 50%
+        x: '0'
+        y: '0'
+    - key: W-KP_6
+      action:
+      - name: UnmaximizeFull
+      - name: MaximizeVert
+      - name: Raise
+      - name: MoveResizeTo
+        width: 50%
+        x: 50%
+        y: '0'
+    - key: W-KP_8
+      action:
+      - name: UnmaximizeFull
+      - name: Raise
+      - name: MoveResizeTo
+        x: '0'
+        y: '0'
+        width: 100%
+        height: 50%
+    - key: W-KP_2
+      action:
+      - name: UnmaximizeFull
+      - name: Raise
+      - name: MoveResizeTo
+        x: '0'
+        y: 50%
+        width: 100%
+        height: 50%
+    - key: W-KP_7
+      action:
+      - name: UnmaximizeFull
+      - name: Raise
+      - name: MoveResizeTo
+        x: '0'
+        y: '0'
+        width: 50%
+        height: 50%
+    - key: W-KP_9
+      action:
+      - name: UnmaximizeFull
+      - name: Raise
+      - name: MoveResizeTo
+        x: 50%
+        y: '0'
+        width: 50%
+        height: 50%
+    - key: W-KP_1
+      action:
+      - name: UnmaximizeFull
+      - name: Raise
+      - name: MoveResizeTo
+        x: '0'
+        y: 50%
+        width: 50%
+        height: 50%
+    - key: W-KP_3
+      action:
+      - name: UnmaximizeFull
+      - name: Raise
+      - name: MoveResizeTo
+        x: 50%
+        y: 50%
+        width: 50%
+        height: 50%
+    - key: W-KP_5
+      action:
+      - name: UnmaximizeFull
+      - name: Raise
+      - name: MoveResizeTo
+        x: center
+        y: center
+        width: 50%
+        height: 75%
+    - key: W-A-Right
+      action:
+        name: MoveToEdge
+        direction: east
+    - key: W-A-Left
+      action:
+        name: MoveToEdge
+        direction: west
+    - key: W-A-Up
+      action:
+        name: MoveToEdge
+        direction: north
+    - key: W-A-Down
+      action:
+        name: MoveToEdge
+        direction: south
+    - key: W-A-KP_9
+      action:
+      - name: Raise
+      - name: MoveResizeTo
+        x: "-0"
+        y: '0'
+    - key: W-A-KP_3
+      action:
+      - name: Raise
+      - name: MoveResizeTo
+        x: "-0"
+        y: "-0"
+    - key: W-A-KP_1
+      action:
+      - name: Raise
+      - name: MoveResizeTo
+        x: '0'
+        y: "-0"
+    - key: W-A-KP_7
+      action:
+      - name: Raise
+      - name: MoveResizeTo
+        x: '0'
+        y: '0'
+    - key: XF86MonBrightnessUp
+      action:
+        name: Execute
+        command: xbacklight -inc 5
+    - key: XF86MonBrightnessDown
+      action:
+        name: Execute
+        command: xbacklight -dec 5
+  mouse:
+    dragThreshold: '1'
+    doubleClickTime: '500'
+    screenEdgeWarpTime: '0'
+    screenEdgeWarpMouse: 'false'
+    context:
+    - name: Frame
+      mousebind:
+      - button: W-Left
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+      - button: W-Left
+        action:
+        - Click
+        - name: Unshade
+      - button: W-Left
+        action:
+        - Drag
+        - name: Move
+      - button: W-Right
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+        - name: Unshade
+      - button: W-Right
+        action:
+        - Drag
+        - name: Resize
+      - button: W-Middle
+        action:
+        - Press
+        - name: Lower
+        - name: FocusToBottom
+        - name: Unfocus
+    - name: Titlebar
+      mousebind:
+      - button: Left
+        action:
+        - Drag
+        - name: Move
+      - button: Left
+        action:
+        - DoubleClick
+        - name: ToggleMaximizeFull
+    - name: Top
+      mousebind:
+        button: Left
+        action:
+        - Drag
+        - name: Resize
+          edge: top
+    - name: Left
+      mousebind:
+        button: Left
+        action:
+        - Drag
+        - name: Resize
+          edge: left
+    - name: Right
+      mousebind:
+        button: Left
+        action:
+        - Drag
+        - name: Resize
+          edge: right
+    - name: Bottom
+      mousebind:
+        button: Left
+        action:
+        - Drag
+        - name: Resize
+          edge: bottom
+    - name: TRCorner BRCorner TLCorner BLCorner
+      mousebind:
+      - button: Left
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+        - name: Unshade
+      - button: Left
+        action:
+        - Drag
+        - name: Resize
+    - name: Client
+      mousebind:
+      - button: Left
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+      - button: Middle
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+      - button: Right
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+    - name: Icon
+      mousebind:
+      - button: Left
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+        - name: Unshade
+      - button: Right
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+    - name: AllDesktops
+      mousebind:
+      - button: Left
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+        - name: Unshade
+      - button: Left
+        action:
+        - Click
+        - name: ToggleOmnipresent
+    - name: Shade
+      mousebind:
+      - button: Left
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+      - button: Left
+        action:
+        - Click
+        - name: ToggleShade
+    - name: Iconify
+      mousebind:
+      - button: Left
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+      - button: Left
+        action:
+        - Click
+        - name: Iconify
+    - name: Maximize
+      mousebind:
+      - button: Left
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+        - name: Unshade
+      - button: Middle
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+        - name: Unshade
+      - button: Right
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+        - name: Unshade
+      - button: Left
+        action:
+        - Click
+        - name: ToggleMaximize
+      - button: Middle
+        action:
+        - Click
+        - name: ToggleMaximize
+          direction: vertical
+      - button: Right
+        action:
+        - Click
+        - name: ToggleMaximize
+          direction: horizontal
+    - name: Close
+      mousebind:
+      - button: Left
+        action:
+        - Press
+        - name: Focus
+        - name: Raise
+        - name: Unshade
+      - button: Left
+        action:
+        - Click
+        - name: Close
+  applications:
+    application:
+      class: "*"
+      decor: 'no'
+  dock:
+    position: TopLeft
+    floatingX: '0'
+    floatingY: '0'
+    stacking: Above
+    direction: Vertical
+    noStrut: 'no'
+    autoHide: 'no'
+    hideDelay: '300'
+    showDelay: '300'
