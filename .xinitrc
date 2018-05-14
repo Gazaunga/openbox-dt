@@ -1,4 +1,5 @@
-exec dbus-launch openbox-session
+#exec dbus-launch openbox-session
+exec dbus-launch --exit-with-session emacs
 ruby bin/rtile.rb &
 
 # Cleanup unnecessary files
