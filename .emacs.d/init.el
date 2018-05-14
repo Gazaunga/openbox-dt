@@ -32,3 +32,12 @@
   (spacemacs/setup-startup-hook)
   (require 'server)
   (unless (server-running-p) (server-start)))
+
+(when (configuration-layer/layer-usedp 'exwm)
+    ;; Helm should show only in its current window
+    (exwm-input-set-key (kbd "s-p") #'spacemacs/exwm-application-launcher)
+    (setq helm-display-function
+          (lambda (buf)
+            (pop-to-buffer buf
+                           '(display-buffer-below-selected . ((window-height . 0.4)
+                                                              (side . 'bottom)))))))
