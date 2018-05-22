@@ -40,7 +40,7 @@ apps = %w[
   rofi-git
 ]
 
-install = ->app{ `trizen -Syu --noconfirm --ignore="inxi" #{app}` }
+install = ->app{ `trizen -Syu --noconfirm #{app}` }
 
 Dir.glob("#{Dir.home}/#{SOURCE}/.", File::FNM_DOTMATCH).each { |f| FileUtils.cp_r("#{f}", DESTINATION, :verbose => true) }
 apps.each &install
