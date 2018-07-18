@@ -64,3 +64,6 @@ URxvt.keysym.M-j: command:\033]721;1\007
 *.color13 : base06
 *.color14 : base0F
 *.color15 : base07
+
+rofi.font: Comfortaa 12 
+rofi.fullscreen: true
