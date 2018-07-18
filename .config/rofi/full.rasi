@@ -1,0 +1,87 @@
+/******************************************************************************
+ * ROFI Color theme
+ * User: neolid
+ *
+ ******************************************************************************/
+
+configuration {
+    columns: 1;
+}
+* {
+    spacing: 1;
+}
+#window, {
+    border:   0;
+    border-radius: 1;
+    padding: 10%;
+    background-color: rgba (34, 45, 50, 60 % );
+
+}
+#mainbox {
+    border:   0;
+    padding: 0%;
+    background-color: rgba ( 216, 222, 232, 0 % );
+
+}
+#message {
+    border:  1;
+    padding: 10 2% 10;
+}
+#listview {
+    padding: 50 15% 0;
+    spacing: 2;
+    border:  0;
+    border-radius: 4;
+    border-color: rgba ( 0, 0, 0, 100 % );
+    background-color: rgba ( 216, 222, 232, 0 % );
+    text-color: rgba ( 231, 232, 235, 100 % );
+
+}
+#element {
+    border:  0;
+    border-color: rgba ( 0, 0, 0, 100 % );
+    border-radius:  4;
+    padding: 5 5 5;
+		background-color: rgba ( 216, 222, 232, 0 % );
+		text-color: rgba ( 231, 232, 235, 100 % );
+
+}
+#element.selected.normal {
+    text-color: rgba ( 0, 188, 212, 100 % );
+    background-color: rgba ( 216, 222, 232, 0 % );
+
+}
+#element.selected.urgent {
+    text-color: rgba ( 191, 97, 106, 100 % );
+    background-color: rgba ( 216, 222, 232, 0 % );
+
+}
+#element.selected.active {
+    text-color: rgba ( 0, 188, 212, 100 % );
+}
+
+#inputbar {
+		padding: 50 15% 0;
+		spacing: 0;
+		background-color: rgba ( 216, 222, 232, 0 % );
+		text-color: rgba ( 231, 232, 235, 100 % );
+
+}
+
+#entry {
+    spacing: 0;
+    border-color: rgba ( 216, 222, 232, 0 % );
+    background-color: rgba ( 216, 222, 232, 0 % );
+    text-color: rgba ( 231, 232, 235, 100 % );
+}
+#prompt {
+    spacing:       0;
+		padding: 5% 5% 0% 0%;
+		text-color: rgba ( 231, 232, 235, 0 % );
+    border-color: rgba ( 0, 0, 0, 10 % );
+    background-color: rgba ( 20, 20, 25, 0 % );
+}
+#case-indicator {
+		background-color: rgba ( 20, 20, 25, 0 % );
+		text-color: rgba ( 20, 20, 25, 0 % );
+}
