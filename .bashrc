@@ -157,7 +157,7 @@ transfer() {
 ### anonfile
 anon() {
     for i in "$@"; do
-    	finalResult="$(curl -F "file=@$i" https://anonfile.com/api/upload)"
+    	finalResult="$(curl -F "file=@$i" https://api.anonfile.com/upload)"
 		printf "$finalResult" | sed 's/.*short":"//;s/"}.*//' | xclip -selection clipboard
 		notify-send "Uploaded!" "$(printf "$finalResult" | sed 's/.*short":"//;s/"}.*//')"
     done
